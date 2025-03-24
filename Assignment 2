@@ -1,1 +1,1383 @@
-# 2301031000049
+task:- this is my webpage code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Musician Story</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('data:image/jpeg;base64,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');
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .text-content {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .text-content h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .text-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .text-content button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .image-content {
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="text-content">
+            <h1>The Story of classic musician</h1>
+            <h2>The Maestro Compost</h2>
+            <p>Whilst people had been making music in Europe for centuries, it was during the Middle Ages that things really started to move forward.</p>
+            <button>Let's Begin</button>
+        </div>
+        <div class="image-content">
+            <img src="image 2.jpg" alt="Mozart - Sonata No. 8 in D major, KV 311">
+            <p class="caption">Musiefy Milestone</p>
+        </div>
+    </section>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Composition Resource</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: right;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 0;
+            color: black;
+        }
+        .intro {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+        .content img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .text {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Be a Professional Composer Since 1992</div>
+        <p class="intro">Welcome to our Music Composition resource page! Whether you're a budding composer or an experienced musician looking to enhance your skills, our collection of music composition documents is here to help you on your creative journey.</p>
+        
+        <div class="content">
+            <img src="https://templatekit.jegtheme.com/gutama/wp-content/uploads/sites/296/2022/06/violin-players-playing-in-orchestra-on-the-street-1024x682.jpg" alt="Musicians performing">
+            <p class="text">Within our extensive library, you'll find a diverse range of resources and tools designed to support composers of all levels. Explore our Music Composition cheat sheets, which provide valuable insights into essential concepts like the Circle of Fifths, helping you understand and apply music theory principles to create harmonically rich compositions.</p>
+        </div>
+        
+        <div class="content">
+            <p class="text">Music is an art that connects souls. Our resources include guides, tips, and examples that will help you understand the deep intricacies of music composition. Whether you are writing your first piece or refining your skills, we have something for everyone.</p>
+            <img src="https://templatekit.jegtheme.com/gutama/wp-content/uploads/sites/296/2022/06/conductor-directing-orchestra-performance-on-the-street-2-1024x682.jpg" alt="Orchestra performing">
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://th.bing.com/th/id/OIP.eoGlaUAKkMOtZVxCH6CbwgHaEv?w=256&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .content-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left, .right {
+            width: 45%;
+            text-align: left;
+        }
+        .milestone {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .line {
+            width: 2px;
+            background: white;
+            height: 250px;
+            position: relative;
+            margin: 2px;
+        }
+        .line img {
+            width: 50px;
+            display: block;
+            margin: 33px ;
+            position: sticky;
+            margin-left: -22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content-box">
+            <div class="left">
+                <div class="milestone">Musiefy Milestone</div>
+                <p>"At Musiefy, we redefine music creation with cutting-edge AI technology, empowering artists and enthusiasts to compose melodies effortlessly. Explore the future of music innovation with our intelligent and dynamic tools."</p>
+            </div>
+            <div class="line">
+                <img src="Images/image 7.jpg" alt="Certified">
+                <img src="Images/image 8.jpg" alt="Best Award">
+                <img src="Images/image 9.jpg" alt="Experienced">
+            </div>
+            <div class="right">
+                <div class="milestone">Certified</div>
+                <p>Certified for excellence, ensuring quality and reliability you can trust.</p>
+                <div class="milestone">Best Award</div>
+                <p>Honored with the Best Award for innovation and creativity in AI-driven music composition. At Musiefy, excellence isn't just a goal—it's our standard.</p>
+                <div class="milestone">Experienced</div>
+                <p>Transforming years of expertise into seamless AI music creation for an unmatched experience.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Services</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .box {
+            width: 23%;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+        .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .text {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="box">
+                <img src="Images/image 12.jpg" alt="Content Creators">
+                <div class="title">Content Creators</div>
+                <p class="text">Create unique AI-generated background music for your videos. Stand out with original soundtracks.</p>
+            </div>
+            <div class="box">
+                <img src="Images/image 13.jpg" alt="Musicians & Producers">
+                <div class="title">Musicians & Producers</div>
+                <p class="text">Get instant inspiration and create professional demos with our AI music generator.</p>
+            </div>
+            <div class="box">
+                <img src="Images/image 14.jpg" alt="Game Developers">
+                <div class="title">Game Developers</div>
+                <p class="text">Generate immersive AI soundscapes and dynamic music for your games and apps.</p>
+            </div>
+            <div class="box">
+                <img src="Images/image 15.jpg" alt="Music Educators">
+                <div class="title">Music Educators</div>
+                <p class="text">Create AI-powered practice tracks and make music education more interactive and engaging.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyMusic AI Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    columns: black;
+    text-align: center;
+}
+
+.music-generator-container {
+    padding: 20px;
+}
+
+.title-heading {
+    font-size: 28px;
+    color: #f5c518;
+}
+
+.subtitle-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature-box {
+    background: rgba(176, 173, 173, 0.310);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    background-color: rgb(135, 189, 186);
+}
+
+.icon-style {
+    font-size: 24px;
+}
+
+.feature-title {
+    font-size: 20px;
+    margin: 10px 0;
+    color: black;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: black;
+}
+
+</style>
+<body>
+    <section class="music-generator-container">
+        <h1 class="title-heading">Why Choose EasyMusic AI Music Generator?</h1>
+        <p class="subtitle-text">The most powerful AI music generator trusted by professionals worldwide</p>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <span class="icon-style">🎵</span>
+                <h2 class="feature-title">AI Powered Studio Quality</h2>
+                <p class="feature-description">Our AI Music Generator Creates Professional-grade Music.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon-style">⚡</span>
+                <h2 class="feature-title">Lightning Fast AI Creation</h2>
+                <p class="feature-description">Generate complete songs with our AI music generator in minutes.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon-style">🎨</span>
+                <h2 class="feature-title">Complete Creative Control</h2>
+                <p class="feature-description">Fine-tune every aspect of your AI-Generated music.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon-style">🤖</span>
+                <h2 class="feature-title">Advanced AI Technology</h2>
+                <p class="feature-description">State-of-the-art AI music generation ensures unique and original compositions every time.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon-style">💰</span>
+                <h2 class="feature-title">Cost Effective</h2>
+                <p class="feature-description">Save thousands on studio time with our AI music generator. Pay only for what you need.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon-style">👌</span>
+                <h2 class="feature-title">Easy To Use</h2>
+                <p class="feature-description">Our AI music generator's interface is designed for both beginners and professionals alike.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .contact-box {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .social-icons img {
+            width: 40px;
+            margin:  5px;
+            border-radius: 50%;
+        }
+        .contact-box img {
+            width: 50px;
+            border-radius: 50%;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="social-icons">
+                <img src="Images/image 26.jpg" alt="Instagram">
+                <img src="Images/image 27.jpg" alt="WhatsApp">
+                <img src="Images/image 28.jpg" alt="Email">
+                <img src="Images/image 29.jpg" alt="LinkedIn">
+            </div>
+            <p>Contact-us from all this ways.</p>
+            <img class="profile-pic" src="Images/20240810_111536 1.jpg" alt="Profile Picture">
+        </div>
+        <div class="contact-box">
+            <img src="Images/image 26.jpg" alt="Instagram">
+            <p>Musiefy Milestone Music Composer.Pvt.Ltd</p>
+        </div>
+        <div class="contact-box">
+            <img src="Images/image 28.jpg" alt="Email">
+            <p>www.musiefymilestone.ac.in</p>
+        </div>
+        <div class="contact-box">
+            <img src="Images/image 27.jpg" alt="WhatsApp">
+            <p>Contact on:+91 9527849621</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .menu-box {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-box">Musiefy Milestone</div>
+        <div class="menu-box">Profile & Learning Section</div>
+        <div class="menu-box">Musiefy Milestone's Music Era</div>
+        <div class="menu-box">Certificates We Achieved</div>
+        <div class="menu-box">Beats Of Past And Future Concerts</div>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify Milestone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.section img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.section .profile-img {
+    width: 30%;
+}
+
+.profile-text, .business-text, .concert-text, .violin-text, .harmony-text, .closing-text {
+    width: 55%;
+    text-align: left;
+}
+
+.business-card, .violin, .harmony {
+    flex-direction: row-reverse;
+}
+
+.closing {
+    flex-direction: row;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+</style>
+<body>
+    <div class="container">
+        <h1 class="title">Profile & Learning Sections</h1>
+
+        <!-- Profile Section -->
+        <div class="section profile">
+            <img src="Images/Blue Art Deco Music Composer Resume_20250119_173324_0000 1.jpg" alt="Profile Image" class="profile-img">
+            <div class="profile-text">
+                <p>The document is a professional profile of Aryan Parmar, a passionate music composer. It highlights his journey and achievements in music composition, focusing on creating melodies that evoke emotions and tell stories. The profile includes:</p>
+                <p>Aryan describes his passion for music, detailing how his journey began and emphasizing his growth in various musical styles like classical, electronic, orchestral, and cinematic. He highlights his dedication to discovering and perfecting his unique sound.</p>
+                <h3>Experience:</h3>
+                <ul>
+                    <li>Spotify (2021): Worked on innovative projects...</li>
+                    <li>Apple Music (2022): Focused on blending creativity with technology...</li>
+                    <li>Musify Milestone (2023): Founded this platform...</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Business Card Section -->
+        <div class="section business-card">
+            <div class="business-text">
+                <h2>Musify Milestone</h2>
+                <p>Musiefy Milestone is more than just a music composition platform—it’s a creative hub and a movement aimed at redefining how music is composed, experienced, and shared. Founded with a vision to celebrate the art of music, it serves as a collaborative space for composers, musicians, and music enthusiasts to connect, innovate, and inspire.</p>
+            </div>
+            <img src="Images/Orange and Black Professional Visiting Card_20250119_141804_0000 1.jpg" alt="Business Card" class="business-img">
+        </div>
+
+        <!-- Concert Section -->
+        <div class="section concert">
+            <img src="Images/Green Simple Elegant Music Concert Banner Landscape_20250119_173737_0000 1.jpg" alt="Concert Image" class="concert-img">
+            <div class="concert-text">
+                <h2>Musify Milestone’s Upcoming Concert: A Symphony of Creativity</h2>
+                <p>Event Name: Melodies Reimagined...</p>
+                <p>Time: 08:00 PM - 02:45 AM</p>
+            </div>
+        </div>
+
+        <!-- Violin Concert Section -->
+        <div class="section violin">
+            <div class="violin-text">
+                <h2>Violin Concert Overview:</h2>
+                <ul>
+                    <li>The event celebrates the magic of strings, featuring both classical masterpieces and contemporary compositions.</li>
+                    <li>Attendees will enjoy soul-stirring performances by renowned violinists and emerging talents.</li>
+                    <li>The program includes a blend of solo and ensemble pieces, showcasing the violin’s beauty and versatility.</li>
+                    <li>The concert promises a memorable musical journey filled with passion and artistry.</li>
+                </ul>
+                <ul>
+                    <p><h3>About Musiefy Milestone’s Philosophy:</h3></p>
+                    <li>Music is not just a skill to be learned but an experience to be lived.</li>
+                    <li>The organization aims to nurture talent, ignite creativity, and build confidence in every student.</li>
+                </ul>
+            </div>
+            <img src="Images/Neutral Minimalist Introduction Page Ebook for Course Creators and Caoches_20250119_203323_0000 1.jpg" alt="Violin Concert" class="violin-img">
+        </div>
+
+        <!-- Harmony Across Genres Section -->
+        <div class="section harmony">
+            <img src="Images/Black and Cream Modern Harmony Across Genre Article Page Document_20250119_211231_0000 1.jpg" alt="Harmony Image" class="harmony-img">
+            <div class="harmony-text">
+                <h2>Harmony Across Genres</h2>
+                <p>Harmony Across Genres: Navigating the Diversity of Modern Music</p>
+                <ul>
+                    <li>
+                        Modern music is a dynamic and ever-evolving tapestry, blending cultures, genres, and emotions to create new and innovative expressions. It spans a spectrum from the soulful echoes of classical instruments to the electrifying beats of electronic music. Today’s musical landscape offers limitless opportunities for exploration, connection, and creativity.</li>
+                </ul>
+                <p>Appreciating Genre Diversity:</p>
+                <ul>
+                    <li>
+                        From pop and jazz to hip-hop, rock, and fusion, modern music is a confluence of countless influences. By guiding students and audiences to appreciate the historical roots of these genres while recognizing their contemporary interpretations, Musiefy Milestone helps foster a deeper understanding of how cultural trends shape the soundtracks of our lives.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Closing Message Section -->
+        <div class="section closing">
+            <div class="closing-text">
+                <p>Dear Supporters,</p>
+                <p>On behalf of myself, Aryan Parmar, and the entire Musiefy Milestone team, we want to extend our deepest gratitude to each one of you. Your unwavering support, encouragement, and passion for music fuel our journey every day.</p>
+                <p>Whether you've attended our concerts, explored our compositions, or engaged with our educational programs, your enthusiasm inspires us to keep pushing the boundaries of creativity and artistry. We are honored to share our love for music with such an incredible community.</p>
+            </div>
+            <img src="Images/Minimalist Simple Brand Introduction Photo Collage Instagram Post_20250119_202322_0000 1.jpg" alt="What We Do" class="closing-img">
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+.hero .sub-heading {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Events Section */
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.event {
+    text-align: center;
+    width: 45%;
+}
+.event img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Albums Section */
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+.album {
+    text-align: center;
+    width: 18%;
+}
+.album img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: black;
+}
+.about img {
+    width: 45%;
+    border-radius: 10px;
+}
+.about-text {
+    width: 50%;
+    color: black;
+}
+.about-text h2 {
+    font-size: 30px;
+    color: black;
+}
+.about-text p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background: black;
+    padding: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.footer-section {
+    width: 30%;
+}
+.footer-section h3 {
+    font-size: 22px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+</style>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="Images/logo.svg" alt="Musiefy Milestone on multiple devices">
+        <p class="sub-heading">Available on Websites and in Application form!</p>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events">
+        <div class="event">
+            <img src="Images/image 35.jpg" alt="25 Event May Name">
+            <p>1. 25 EVENT MAY NAME</p>
+        </div>
+        <div class="event">
+            <img src="Images/image 36.jpg" alt="Ambient Background Music">
+            <p>2. Ambient Background Music</p>
+        </div>
+        <div class="event">
+            <img src="Images/image 37.jpg" alt="Christmas Concert">
+            <p>3. Christmas Concert</p>
+        </div>
+        <div class="event">
+            <img src="Images/image 38.jpg" alt="Mahapuran">
+            <p>4. Mahapuran</p>
+        </div>
+    </section>
+
+    <!-- Music Albums Section -->
+    <section class="albums">
+        <div class="album"><img src="Images/image 39.jpg" alt="Album 1"><p>Intace JAZZ Night</p></div>
+        <div class="album"><img src="Images/image 40.jpg" alt="Album 2"><p>We Love Live Music</p></div>
+        <div class="album"><img src="Images/image 41.jpg" alt="Album 3"><p>Starboy</p></div>
+        <div class="album"><img src="Images/image 42.jpg" alt="Album 4"><p>Akon - I Wanna Love You</p></div>
+        <div class="album"><img src="Images/image 43.jpg" alt="Album 5"><p>AC/DC</p></div>
+        <div class="album"><img src="Images/image 44.jpg" alt="Album 6"><p>Aatma Rama</p></div>
+        <div class="album"><img src="Images/image 45.jpg" alt="Album 7"><p>Bhajan Radhe</p></div>
+        <div class="album"><img src="Images/image 46.jpg" alt="Album 8"><p>Hanuman Chalisa</p></div>
+        <div class="album"><img src="Images/image 47.jpg" alt="Album 9"><p>Ram Navami Special</p></div>
+        <div class="album"><img src="Images/image 48.jpg" alt="Album 10"><p>Old Ones</p></div>
+        <div class="album"><img src="Images/image 49.jpg" alt="Album 11"><p>Divine Krishna Bhajan</p></div>
+        <div class="album"><img src="Images/image 50.jpg" alt="Album 12"><p>Lord Krishna Flute Music</p></div>
+        <div class="album"><img src="Images/image 51.jpg" alt="Album 13"><p>Lord Krishna Dance</p></div>
+        <div class="album"><img src="Images/image 52.jpg" alt="Album 14"><p>Lord Krishna Dance</p></div>
+        <div class="album"><img src="Images/image 53.jpg" alt="Album 15"><p>Lord Krishna Dance</p></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-text">
+            <h1>Musiefy Milestone</h1>
+            <p><h2>Musiefy Milestone is a vibrant online platform dedicated to connecting music enthusiasts with the milestones of their favorite artists and bands. From debut albums and iconic performances to chart-topping hits and career-defining moments, Musiefy Milestone celebrates the journey of music creators and their incredible achievements. Whether you're a die-hard fan or a casual listener, the website offers a seamless experience to explore detailed timelines, exclusive insights, and curated playlists that bring musical milestones to life.</h2> </p>
+        </div>
+        <img src="Images/mine.jpg" alt="About Image">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Musiefy Milestone</h3>
+                <p>Music Composer</p>
+                <p>Explore music milestones with curated playlists and insights.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p>📍 New Naroda, Ahmedabad-Gujarat</p>
+                <p>📞 +91 9527849621</p>
+                <p>🌐 <a href="#">www.musiefymilestone.ac.in</a></p>
+                <p>🕒 07:00 AM - 19:00 PM</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            font-family: 'Cursive', sans-serif;
+        }
+
+        .certificates img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .event-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .event {
+            width: 45%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .event img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <h1>Certificates We Achieved</h1>
+        <div class="certificates">
+            <img src="Images/Gold and Brown Elegant Professional Certificate of Appreciation Certificate_20250119_142220_0000 1.png" alt="Certificate 1">
+            <img src="Images/Cream Bordered Appreciation Certificate_20250119_135848_0000 1.jpg" alt="Certificate 2">
+            <img src="Images/Black Gold Modern Elegant Certificate of Competition Certificate_20250119_144840_0000 1.jpg" alt="Certificate 3">
+        </div>
+        <p>Musiefy celebrates a major milestone by winning the prestigious Ahmedabad Grand Music Competition...</p>
+    </section>
+
+    <section class="section">
+        <h2>Musiefy Milestone Event</h2>
+        <div class="event-card">
+            <div class="event">
+                <img src="Images/Beige Green Cute Illustrative Participation Certificate_20250119_140007_0000 1.jpg" alt="Event Poster">
+                <p>Join us for an unforgettable night of retro music and dance!</p>
+                <p><b>Saturday, 28 June 2026</b> | 04:00 PM</p>
+                <p><b>Location:</b> 148-Gota, Silveroakuni, Ahmedabad</p>
+                <p>For reservations, call Aryan Schumacher at +91 9527837621</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>"Join us for Musiefy Milestone's next electrifying concert, a celebration of music, creativity, and unforgettable moments!"</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone Event</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .event-section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .event-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .event {
+            width: 45%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .event img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="event-section">
+        <h2>Musiefy Milestone Event</h2>
+        <div class="event-card">
+            <div class="event">
+                <img src="Images/Red and Black Retro Music Night Invitation_20250119_133226_0000 1.jpg" alt="Event Poster">
+                <p>Join us for an unforgettable night of retro music and dance!</p>
+                <p><b>Saturday, 28 June 2026</b> | 04:00 PM</p>
+                <p><b>Location:</b> 148-Gota, Silveroakuni, Ahmedabad</p>
+                <p>For reservations, call Aryan Schumacher at +91 9527837621</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>"Join us for Musiefy Milestone's next electrifying concert, a celebration of music, creativity, and unforgettable moments!"</p>
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone Event</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .event-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .highlight-list {
+            text-align: left;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        .event-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .event {
+            width: 45%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: black;
+        }
+
+        .event img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .ticket-section {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .ticket {
+            width: 30%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .ticket img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>🎵 Musiefy Milestone: Bridging the Beats of Past and Future Concerts! 🎵</p>
+        </div>
+
+        <section class="event-section">
+            <h2>✨ Highlights from Our Past Concerts:</h2>
+            <ul class="highlight-list">
+                <li>🎸 What’s Next? Here’s What’s on the Playlist</li>
+                <li>🎤 Get Ready for the Spotlight: Upcoming Stars</li>
+                <li>🔥 Turning Up the Heat: What’s Coming Your Way</li>
+                <li>💎 On the Horizon: Music That Will Move You</li>
+                <li>💃 Feel the Beat: Upcoming Shows to Dance To</li>
+            </ul>
+        </section>
+
+        <div class="event-card">
+            <div class="event">
+                <img src="Images/Brown Minimalist Concert Music Instagram Post 1.jpg" alt="Concert Music">
+                <p>Join us for an unforgettable evening of melodies at the Musiefy Milestone Concert! 🎵</p>
+                <p><b>10.02.2025</b> | 07:00 PM</p>
+                <p><b>Location:</b> Gota, Ahmedabad-Gujarat</p>
+            </div>
+        </div>
+
+        <div class="ticket-section">
+            <div class="ticket">
+                <img src="Images/ticket 1.jpg" alt="Music Festival Ticket 1">
+            </div>
+            <div class="ticket">
+                <img src="Images/ticket 2.jpg" alt="Music Festival Ticket 2">
+            </div>
+            <div class="ticket">
+                <img src="Images/ticket 3.jpg" alt="Music Festival Ticket 3">
+            </div>
+            <div class="ticket">
+                <img src="Images/ticket 4.jpg" alt="Music Festival Ticket 4">
+            </div>
+            <div class="ticket">
+                <img src="Images/ticket 5.jpg" alt="Music Festival Ticket 5">
+            </div>
+            <div class="ticket">
+                <img src="Images/ticket 6.jpg" alt="Music Festival Ticket 6">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Experience the magic of live music like never before.</p>
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musiefy Milestone Event</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .trailer-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 22px;
+            margin: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .event-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .event-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .event {
+            width: 80%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .event img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Welcome To The Musiefy Milestone</p>
+        </div>
+
+        <img class="banner" src="Images/image 79.jpg" alt="Musiefy Milestone Banner">
+
+        <div class="trailer-text">
+            <p>It's just a Trailor of musiefy milestone, just keep wait for exciting concerts.</p>
+        </div>
+
+        <div class="event-card">
+            <div class="event">
+                <img src="Images/image 80.jpg" alt="Musiefy Music Interface">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Experience the magic of live music like never before.</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
+
+
+task:-this is my webpage link
+
+file:///C:/Users/aryan/OneDrive/Desktop/Figma%20Assignment-2/Webpage.html
+
